@@ -1,7 +1,13 @@
+let p;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  p = new particula(width / 2, height / 2);
 }
 
 function draw() {
-  circle(mouseX, mouseY, 20);
+  if (p.isAlive) {
+    p.update();
+    p.display();
+  }
 }
