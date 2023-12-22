@@ -2,7 +2,7 @@ let p;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  p = new particula(width / 2, height / 2);
+  p = new Particula(width / 2, height / 2);
 }
 
 function draw() {
